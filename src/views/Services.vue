@@ -21,7 +21,7 @@
 
 		<v-container fluid pa-0>
 			<v-row class="pa-0">
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-1.jpg" ></v-img>
 
@@ -33,7 +33,7 @@
 					</v-card>
 					
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-2.jpg" ></v-img>
 
@@ -45,7 +45,7 @@
 					</v-card>
 					
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-3.jpg" ></v-img>
 
@@ -57,7 +57,7 @@
 					</v-card>
 					
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-4.jpg" ></v-img>
 
@@ -69,7 +69,7 @@
 					</v-card>
 					
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-5.jpg" ></v-img>
 
@@ -81,7 +81,7 @@
 					</v-card>
 					
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="4">
 					<v-card :loading="loading" flat class="mx-auto my-12" max-width="374" >
 						<v-img height="250" src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/service-big-6.jpg" ></v-img>
 
@@ -98,13 +98,13 @@
 
 		<v-container fluid pa-0>
 			<v-row class="primary pa-5" >
-				<v-col class="text-center">
+				<v-col class="text-center" cols="12" xs="12" sm="6">
 					<h2 class="white--text">
 						<v-icon dark>mdi-phone-plus</v-icon>
 						¡Contáctenos ahora y obtenga ofertas especiales!
 					</h2>
 				</v-col>
-				<v-col class="text-center">
+				<v-col class="text-center" cols="12" xs="12" sm="6">
 					<v-btn color="secondary"  outlined dark  class="rounded-0" >Hacer una cita ahora</v-btn>
 				</v-col>
 			</v-row>

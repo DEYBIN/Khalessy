@@ -21,10 +21,10 @@
 
 		<v-container fluid pa-0>
 			<v-row class="pa-0">
-				<v-col class="col-6 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="6">
 						<v-img  src="../assets/spa-12.jpg" height="480px"></v-img>
 				</v-col>
-				<v-col class="col-6 pa-0 white" >
+				<v-col class="pa-0 white" cols="12" xs="12" sm="6" >
 					<v-row class="pa-10" >
 						<v-col class="pa-10 col-md-12 ">
 							<h2 class="mb-5">Personal profesional</h2>
@@ -36,7 +36,7 @@
 				</v-col>
 			</v-row>
 			<v-row class="pa-0">
-				<v-col class="col-6 pa-0 white" >
+				<v-col class="pa-0 white" cols="12" xs="12" sm="6">
 					<v-row class="pa-10" >
 						<v-col class="pa-10 col-md-12 ">
 							<h2 class="mb-5">Interior acogedor</h2>
@@ -45,7 +45,7 @@
 						</v-col>
 					</v-row>
 				</v-col>
-				<v-col class="col-6 pa-0">
+				<v-col class="pa-0" cols="12" xs="12" sm="6">
 						<v-img  src="../assets/spa-13.jpg" height="480px"></v-img>
 				</v-col>
 
@@ -57,7 +57,7 @@
 				<v-container fluid pa-5>
 
 					<v-row >
-						<v-col class="text-center " >
+						<v-col class="text-center " cols="12" xs="12" sm="4">
 							<v-container class="bacg" style="background-color: #51a8b161;">
 								<v-avatar size="200">
 									<img	src="https://cdn.vuetifyjs.com/images/john.jpg"	alt="John">
@@ -72,7 +72,7 @@
 								</v-card-actions>
 							</v-container>
 						</v-col>
-						<v-col class="text-center " >
+						<v-col class="text-center " cols="12" xs="12" sm="4">
 							<v-container class="bacg" style="background-color: #51a8b161;">
 								<v-avatar size="200">
 									<img	src="https://cdn.vuetifyjs.com/images/john.jpg"	alt="John">
@@ -87,7 +87,7 @@
 								</v-card-actions>
 							</v-container>
 						</v-col>
-						<v-col class="text-center " >
+						<v-col class="text-center " cols="12" xs="12" sm="4">
 							<v-container class="bacg" style="background-color: #51a8b161;">
 								<v-avatar size="200">
 									<img	src="https://cdn.vuetifyjs.com/images/john.jpg"	alt="John">
@@ -106,16 +106,17 @@
 				</v-container>
 			</v-parallax>
 		</v-container>
+
 		<v-container fluid pa-0>
 			<v-row >
-				<v-col class="text-right primary" >
+				<v-col class="text-right primary" cols="12" xs="12" sm="6">
 					<h1 class="white--text font-weight-light">
 						Hechos graciosos
 						<v-icon x-large dark>mdi-check-box-multiple-outline</v-icon>
 						
 					</h1>
 				</v-col>
-				<v-col class="text-center">
+				<v-col class="text-center" cols="12" xs="12" sm="6">
 					<P>Lavar el cabello elimina el exceso de sudor y grasa, así como los productos no deseados del cabello y el cuero cabelludo. A menudo, el cabello se lava como parte de la ducha o el baño con champú, un tensioactivo especializado. Los champús funcionan aplicando agua y champú al cabello.</P>
 				</v-col>
 			</v-row>

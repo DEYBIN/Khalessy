@@ -1,15 +1,19 @@
 <template>
 
 	<v-container fluid pa-0>
+
+
+		
 		<v-carousel
-				height="1000px"
+				height="790"
+	
 				hide-delimiter-background
 				show-arrows-on-hover
 			>
 
 			<v-carousel-item
-					:key="0"
-					src="../assets/spa-11.jpg"
+
+					src="../assets/spa-09.jpg"
 					reverse-transition="fade-transition"
 			>
 				<v-container>
@@ -57,8 +61,7 @@
 				</v-container>
 			</v-carousel-item>
 
-			<v-carousel-item				
-					:key="1"
+			<v-carousel-item
 					src="../assets/spa-10.jpg"
 					reverse-transition="fade-transition"
 		
@@ -113,7 +116,7 @@
 
 		<v-container fluid pt-0>
 			<v-row class="pa-0 primary">
-				<v-col class="col-4 pa-0 white" >
+				<v-col class="pa-0 white " cols="12" xs="12" sm="4">
 					<v-row class="pa-15">
 						<v-col class="col-md-2">
 							<div class="mt-2 ml-2">
@@ -128,7 +131,7 @@
 						</v-col>
 					</v-row>
 				</v-col>
-				<v-col class="col-4 pa-0">
+				<v-col class="col-4 pa-0" cols="12" xs="12" sm="4">
 
 						<v-parallax  dark src="../assets/spa-08.jpg" height="100%">
 							<v-container fluid>
@@ -149,7 +152,7 @@
 
 				
 				</v-col>
-				<v-col class="col-4 text-center pa-0" align-self="center"  >
+				<v-col class="col-4 text-center pa-0" align-self="center" cols="12" xs="12" sm="4" >
 					
 							<v-btn color="secondary"  outlined dark  class="rounded-0" >Hacer una cita ahora</v-btn>
 					
@@ -588,10 +591,10 @@
 
 		<v-container fluid pa-0>
 			<v-row class="pa-0 primary">
-				<v-col class="col-6 pa-0">
-						<v-img  src="../assets/new-01.jpg" height="380px"></v-img>
+				<v-col class="pa-0" cols="12" xs="12" sm="6">
+						<v-img  src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/bg-side-9.jpg" height="380px"></v-img>
 				</v-col>
-				<v-col class="col-6 pa-0 white primary" >
+				<v-col class="pa-0 white primary" cols="12" xs="12" sm="6" >
 					<v-row class="pa-10" >
 						<v-col class="pa-10 col-md-12">				
 							<h2 class="white--text">Lo que ellas dicen</h2>
@@ -614,7 +617,51 @@
 						</v-col>
 					</v-row>
 					<v-row >
-						<v-col class="text-center" >
+						<v-slide-group multiple show-arrows style="width: 100%;">
+							<v-slide-item :key="0" >
+								<v-card
+								max-width="370"
+								class="mx-auto mb-5 pb-5"
+								raised
+								>
+									<v-img
+										src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/08/pic-blog-1.jpg"
+										height="194"
+									></v-img>
+									<v-card-title>El agua fría hace que el cabello luzca con más brillo</v-card-title>
+									<v-card-text>No es necesario realizar todo el lavado con agua fría. Podemos comenzar con agua tibia y el último enjuagado hacerlo con agua a más baja temperatura. De esta forma conseguiremos que el pelo brille mucho más.</v-card-text>
+								</v-card>
+							</v-slide-item>
+							<v-slide-item :key="1" >
+								<v-card
+								max-width="370"
+								class="mx-auto mb-5 pb-5"
+								raised
+								>
+									<v-img
+										src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/08/pic-blog-1.jpg"
+										height="194"
+									></v-img>
+									<v-card-title>El agua fría hace que el cabello luzca con más brillo</v-card-title>
+									<v-card-text>No es necesario realizar todo el lavado con agua fría. Podemos comenzar con agua tibia y el último enjuagado hacerlo con agua a más baja temperatura. De esta forma conseguiremos que el pelo brille mucho más.</v-card-text>
+								</v-card>
+							</v-slide-item>
+							<v-slide-item :key="2" >
+								<v-card
+								max-width="370"
+								class="mx-auto mb-5 pb-5"
+								raised
+								>
+									<v-img
+										src="http://demo.oceanthemes.net/modis/wp-content/uploads/2016/08/pic-blog-1.jpg"
+										height="194"
+									></v-img>
+									<v-card-title>El agua fría hace que el cabello luzca con más brillo</v-card-title>
+									<v-card-text>No es necesario realizar todo el lavado con agua fría. Podemos comenzar con agua tibia y el último enjuagado hacerlo con agua a más baja temperatura. De esta forma conseguiremos que el pelo brille mucho más.</v-card-text>
+								</v-card>
+							</v-slide-item>
+						</v-slide-group>
+						<!-- <v-col class="text-center" >
 							<v-card
 								max-width="370"
 								class="mx-auto mb-5 pb-5"
@@ -658,7 +705,7 @@
 								<v-card-text>El cuidado del cabello es un término general para las partes de la higiene y la cosmetología que involucran el cabello en el ser humano ...</v-card-text>
 							</v-card>
 							
-						</v-col>
+						</v-col> -->
 					</v-row>
 				</v-container>
 			</v-parallax>
@@ -666,13 +713,13 @@
 
 		<v-container fluid pa-0>
 			<v-row class="primary pa-5" >
-				<v-col class="text-center">
+				<v-col class="text-center" cols="12" xs="12" sm="6">
 					<h2 class="white--text">
 						<v-icon dark>mdi-phone-plus</v-icon>
 						¡Contáctenos ahora y obtenga ofertas especiales!
 					</h2>
 				</v-col>
-				<v-col class="text-center">
+				<v-col class="text-center" cols="12" xs="12" sm="6">
 					<v-btn color="secondary"  outlined dark  class="rounded-0" >Hacer una cita ahora</v-btn>
 				</v-col>
 			</v-row>

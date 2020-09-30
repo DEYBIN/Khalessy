@@ -26,7 +26,7 @@
 		<v-footer dark class="pa-0 ma-0">
 			<v-container fluid pa-5 class="tertiary">
 				<v-row >
-					<v-col cols="4">
+					<v-col cols="12" xs="12" sm="4">
 						<h4>Consejos</h4>
 						<p class="ma-0 caption font-weight-light">Cómo hacer que tu cabello crezca más rápido</p>
 						<v-divider dark></v-divider>
@@ -37,7 +37,7 @@
 						<p class="ma-0 caption font-weight-light">Una guía para el propietario del cabello naturalmente ondulado</p>
 						<v-divider dark></v-divider>
 					</v-col>
-					<v-col cols="4">
+					<v-col cols="12" xs="12" sm="4">
 						<div class="">
 						<h4>Horario de Atención</h4>
 						<p class="ma-0 caption font-weight-light">Lunes - Viernes <span class="float-right primary--text">9 am a 10 pm</span></p>
@@ -49,7 +49,7 @@
 						
 						</div>	
 					</v-col>
-					<v-col cols="4">
+					<v-col cols="12" xs="12" sm="4">
 						<h4>Contacta con nosotros</h4>
 						<p class="ma-0 caption font-weight-light">Centro Comercial Constitución, Huancayo</p>
 						<v-divider dark></v-divider>
@@ -65,7 +65,7 @@
 						
 				</v-row>
 				<v-row>
-					    <v-card
+					<v-card
 							
       class="flex tertiary"
       flat
@@ -88,7 +88,7 @@
       </v-card-title>
 
       <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>Copyright 2020 - Kalecy Spa</strong>
+        {{ new Date().getFullYear() }} — <strong>Copyright 2020 - Khalessy Spa</strong>
       </v-card-text>
     </v-card>
 				</v-row>

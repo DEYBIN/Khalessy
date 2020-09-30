@@ -24,21 +24,28 @@
 		</v-container>
 
 		<v-container>
+			<v-form ref="form" v-model="valid" lazy-validation @submit.prevent="sendEmail">
 			<h2 class="text-center">ENVIANOS UN MENSAJE</h2>
 			<v-row class=" pa-5" >
-				<v-col class="text-center">
-					<v-form ref="form" v-model="valid" :lazy-validation="lazy" >
+				<v-col class="text-center" cols="12" xs="12" sm="6">
+					<!-- <v-form  > -->
 
-						<v-text-field label="Nombre Y Apellidos" single-line solo ></v-text-field>
-						<v-text-field label="Email" single-line solo ></v-text-field>
-						<v-text-field label="Numero Tefefonico" single-line solo></v-text-field>
-					</v-form>
+						<v-text-field v-model="datos.name" name="user_name" label="Nombre Y Apellidos" single-line solo required ></v-text-field>
+						<v-text-field v-model="datos.email" name="user_email" label="Email" single-line solo  required></v-text-field>
+						<v-text-field v-model="datos.phone" name="contact_number" label="Numero Tefefonico" single-line solo required></v-text-field>
+					<!-- </v-form> -->
 				</v-col>
-				<v-col class="text-center">
-					<v-textarea solo name="input-7-4" label="Escribe aqui tu mensaje"></v-textarea>
-				<v-btn color="success" class="mr-4">Enviar Mensaje</v-btn>
+				<v-col class="text-center" cols="12" xs="12" sm="6">
+					<v-textarea  v-model="datos.messages" solo name="message" label="Escribe aqui tu mensaje" required></v-textarea>
+				<v-btn color="success"  type="submit" class="mr-4" >Enviar Mensaje</v-btn>
 				</v-col>
 			</v-row>
+			</v-form>
+			<div>
+				<v-alert dismissible :type="type" v-model="alert">{{messages}}</v-alert>
+
+				
+			</div>
 		</v-container>
 
 
@@ -50,29 +57,43 @@
 </template>
 
 <script>
-export default {
-    data () {
-      return {
-        items: [
-          {
-            src: 'http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/wide3.jpg',
-          },
-          {
-            src: 'http://demo.oceanthemes.net/modis/wp-content/uploads/2016/09/wide4.jpg',
+	import emailjs from 'emailjs-com';
+	// init("user_t9kIGZZuiGZzAW4GEfVqJ");
+	export default {
+			data () {
+				return {
+					datos:{
+						name:'',
+						email:'',
+						phone:'',
+						messages:'',
 					},
+					valid: true,
+					alert:false,
+					messages: '',
+					type:'success',
+				}
+			},
+			methods: {
+				sendEmail(e){
 					
-          
-				],
-				loading: false,
-      selection: 1,
-      }
-		},
-		methods: {
-      reserve () {
-        this.loading = true
-
-        setTimeout(() => (this.loading = false), 2000)
-      },
-    },
-  }
+					emailjs.sendForm("service_qjnrg7w", "template_nxv223f", e.target, "user_t9kIGZZuiGZzAW4GEfVqJ" ).then(
+						(result) => {
+							this.datos.name='';
+							this.datos.email='';
+							this.datos.phone='';
+							this.datos.messages='';
+							this.alert=true;
+							this.messages='Su Mensaje se Envio Correctamente';
+						},
+						(error) => {
+							this.messages=error;
+							this.alert=true;
+							this.type='error';
+						},
+						
+					)
+				}
+			}
+		}
 </script>
