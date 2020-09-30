@@ -76,23 +76,28 @@
 			},
 			methods: {
 				sendEmail(e){
-					
-					emailjs.sendForm("service_qjnrg7w", "template_nxv223f", e.target, "user_t9kIGZZuiGZzAW4GEfVqJ" ).then(
-						(result) => {
-							this.datos.name='';
-							this.datos.email='';
-							this.datos.phone='';
-							this.datos.messages='';
-							this.alert=true;
-							this.messages='Su Mensaje se Envio Correctamente';
-						},
-						(error) => {
-							this.messages=error;
-							this.alert=true;
-							this.type='error';
-						},
-						
-					)
+					if(this.datos.name!='' && this.datos.email!='' && this.datos.phone!=''&& this.datos.messages!=''){
+						emailjs.sendForm("service_qjnrg7w", "template_nxv223f", e.target, "user_t9kIGZZuiGZzAW4GEfVqJ" ).then(
+							(result) => {
+								this.datos.name='';
+								this.datos.email='';
+								this.datos.phone='';
+								this.datos.messages='';
+								this.alert=true;
+								this.messages='Su Mensaje se Envio Correctamente';
+							},
+							(error) => {
+								this.messages=error;
+								this.alert=true;
+								this.type='error';
+							},
+							
+						)
+					}else{
+						this.messages='Todos los campos son requeridos';
+						this.alert=true;
+						this.type='error';
+					}
 				}
 			}
 		}
